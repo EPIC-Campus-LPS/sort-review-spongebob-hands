@@ -48,28 +48,18 @@ public class QuadSorts {
 
         int[] tempArr = arr;
 
-        for (int i = 0; i < tempArr.length; i++) {
-
+        for (int i = 1; i < tempArr.length; i++) {
+            int j = i - 1;
             int tempValue = tempArr[i];
-
-            for (int j = i; j >= 0; j--) {
-
-                if (tempArr[i] < tempArr[j]) {
-
-                    tempArr[j+1] = tempArr[j];
-
-                } else if (tempArr[i] > tempArr[j]) {
-
-                    tempArr[j+1] = tempValue;
-
-                }
-
+            while (j >= 0 && tempArr[j] > tempValue) {
+                tempArr[j + 1] = tempArr[j];
+                j = j - 1;
             }
-
+            tempArr[j + 1] = tempValue;
         }
 
         return tempArr;
-
     }
+
 
 }
