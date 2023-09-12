@@ -27,15 +27,49 @@ public class QuadSorts {
     public static int[] selectionSort(int[] arr) {
         int[] tempArr = arr;
         for (int i = 0; i < tempArr.length; i++) {
-            int low = i;
+            int lowIndex = i;
             for (int j = i + 1; j < tempArr.length; j++) {
-                if (tempArr[j] < tempArr[low]) {
-                    int temp = tempArr[low];
-                    tempArr[low] = tempArr[i];
-                    tempArr[i] = temp;
+                if (tempArr[j] < tempArr[lowIndex]) {
+                    lowIndex = j;
                 }
             }
+
+            int temp = tempArr[lowIndex];
+            tempArr[lowIndex] = tempArr[i];
+            tempArr[i] = temp;
+
         }
+
         return tempArr;
+
     }
+
+    public static int[] insertionSort(int[] arr) {
+
+        int[] tempArr = arr;
+
+        for (int i = 0; i < tempArr.length; i++) {
+
+            int tempValue = tempArr[i];
+
+            for (int j = i; j >= 0; j--) {
+
+                if (tempArr[i] < tempArr[j]) {
+
+                    tempArr[j+1] = tempArr[j];
+
+                } else if (tempArr[i] > tempArr[j]) {
+
+                    tempArr[j+1] = tempValue;
+
+                }
+
+            }
+
+        }
+
+        return tempArr;
+
+    }
+
 }
