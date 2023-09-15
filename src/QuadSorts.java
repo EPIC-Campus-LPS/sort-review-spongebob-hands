@@ -14,10 +14,13 @@ public class QuadSorts {
      */
     public static int[] bubbleSort(int[] arr) {
 
+        // declares temporary array
         int[] tempArr = arr;
 
+        // does inner loop comparison multiple times
         for (int j = 0; j < tempArr.length; j++) {
 
+            // compares each value to every other value in the list
             for (int i = 0; i < tempArr.length - 1; i++) {
 
                 if (tempArr[i] > tempArr[i + 1]) {
@@ -32,6 +35,7 @@ public class QuadSorts {
 
         }
 
+        // returns sorted array
         return tempArr;
 
     }
