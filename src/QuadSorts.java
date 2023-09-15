@@ -5,12 +5,11 @@ public class QuadSorts {
         int[] tempArr = arr;
 
         for (int j = 0; j < tempArr.length; j++) {
-
             for (int i = 0; i < tempArr.length - 1; i++) {
-
                 if (tempArr[i] > tempArr[i + 1]) {
 
                     int temp = tempArr[i];
+                    //Swaps i and the number infront of it
                     tempArr[i] = tempArr[i + 1];
                     tempArr[i + 1] = temp;
 
@@ -51,8 +50,11 @@ public class QuadSorts {
         for (int i = 1; i < tempArr.length; i++) {
             int j = i - 1;
             int tempValue = tempArr[i];
+            //Repeats until tempArr[i] is less than tempArr[j]
             while (j >= 0 && tempArr[j] > tempValue) {
+                //Swaps j and the number in front of it
                 tempArr[j + 1] = tempArr[j];
+                //Makes j decrease by 1
                 j = j - 1;
             }
             tempArr[j + 1] = tempValue;
@@ -63,17 +65,17 @@ public class QuadSorts {
 
     public static int[] mergeSort(int[] arr) {
 
-        if(arr.length < 2) {
+        if (arr.length < 2) {
             return arr;
         }
 
-        int midIndex = (arr.length)/2;
+        int midIndex = (arr.length) / 2;
 
         int[] leftArr = new int[midIndex];
-        int[] rightArr = new int[arr.length-midIndex];
+        int[] rightArr = new int[arr.length - midIndex];
 
         System.arraycopy(arr, 0, leftArr, 0, midIndex);
-        System.arraycopy(arr, midIndex, rightArr, 0, arr.length-midIndex);
+        System.arraycopy(arr, midIndex, rightArr, 0, arr.length - midIndex);
 
         leftArr = mergeSort(leftArr);
         rightArr = mergeSort(rightArr);
@@ -90,9 +92,9 @@ public class QuadSorts {
 
         int leftIndex = 0, rightIndex = 0, sortedIndex = 0;
 
-        while(leftIndex < leftArr.length && rightIndex < rightArr.length) {
+        while (leftIndex < leftArr.length && rightIndex < rightArr.length) {
 
-            if(leftArr[leftIndex] <= rightArr[rightIndex]) {
+            if (leftArr[leftIndex] <= rightArr[rightIndex]) {
                 arr[sortedIndex++] = leftArr[leftIndex++];
             } else {
                 arr[sortedIndex++] = rightArr[rightIndex++];
