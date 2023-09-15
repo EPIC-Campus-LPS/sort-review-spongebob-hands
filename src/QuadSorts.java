@@ -37,7 +37,7 @@ public class QuadSorts {
     }
 
     /**
-     * sorts an int array from least to greatest by selecting the smallest value from the unsorted portion of the list, and then sorting it in the previously sorted section
+     * sorts an integer array from least to greatest by selecting the smallest value from the unsorted portion of the list, and then sorting it in the previously sorted section
      *
      * @param arr takes the array to be sorted
      * @return returns array sorted from least to greatest
@@ -48,19 +48,21 @@ public class QuadSorts {
         int[] tempArr = arr;
 
         for (int i = 0; i < tempArr.length; i++) {
+            //Creates and int used as the lowest index
             int lowIndex = i;
             for (int j = i + 1; j < tempArr.length; j++) {
+                //If index j is less than lowIndex then make lowIndex equal to j
                 if (tempArr[j] < tempArr[lowIndex]) {
                     lowIndex = j;
                 }
             }
-
+            //Used to move the lowest int to the correct spot
             int temp = tempArr[lowIndex];
             tempArr[lowIndex] = tempArr[i];
             tempArr[i] = temp;
 
         }
-
+        //Returns the array
         return tempArr;
 
     }
