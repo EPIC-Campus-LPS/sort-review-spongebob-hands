@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c731394b-3b8b-4b3f-9959-7ab0a6255d3c" name="Changes" comment="Insertion sort">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuadSorts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuadSorts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortingTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortingTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

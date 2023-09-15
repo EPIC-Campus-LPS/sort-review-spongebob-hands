@@ -61,5 +61,24 @@ public class QuadSorts {
         return tempArr;
     }
 
+    public static int[] mergeSort(int[] arr) {
+
+        if(arr.length == 1) {
+            return arr;
+        }
+
+        int midIndex = (arr.length)/2;
+
+        int[] leftArr = new int[midIndex];
+        int[] rightArr = new int[arr.length-midIndex];
+
+        System.arraycopy(arr, 0, leftArr, 0, midIndex);
+        System.arraycopy(arr, midIndex, rightArr, 0, arr.length-midIndex);
+
+        leftArr = mergeSort(leftArr);
+        rightArr = mergeSort(rightArr);
+
+    }
+
 
 }
