@@ -22,9 +22,9 @@ public class SortingTester {
             }
 
             //Sort them using each of the sorting methods
-//            QuadSorts.bubbleSort(testCases[0]);
-//            QuadSorts.selectionSort(testCases[1]);
-//            QuadSorts.insertionSort(testCases[2]);
+            QuadSorts.bubbleSort(testCases[0]);
+            QuadSorts.selectionSort(testCases[1]);
+            QuadSorts.insertionSort(testCases[2]);
             QuadSorts.mergeSort(testCases[3]);
 
             //Check if it worked
