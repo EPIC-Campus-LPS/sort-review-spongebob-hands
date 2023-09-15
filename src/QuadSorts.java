@@ -24,8 +24,12 @@ public class QuadSorts {
 
     }
 
+    // sorts an integer array from least to greatest by selecting the smallest value from the unsorted portion of the list, and then sorting it in the previously sorted section
     public static int[] selectionSort(int[] arr) {
+
+        // declaring new array
         int[] tempArr = arr;
+
         for (int i = 0; i < tempArr.length; i++) {
             int lowIndex = i;
             for (int j = i + 1; j < tempArr.length; j++) {
