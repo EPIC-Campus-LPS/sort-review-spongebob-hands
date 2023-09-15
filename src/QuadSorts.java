@@ -37,7 +37,7 @@ public class QuadSorts {
     }
 
     /**
-     * sorts an integer array from least to greatest by selecting the smallest value from the unsorted portion of the list, and then sorting it in the previously sorted section
+     * sorts an int array from least to greatest by selecting the smallest value from the unsorted portion of the list, and then sorting it in the previously sorted section
      *
      * @param arr takes the array to be sorted
      * @return returns array sorted from least to greatest
