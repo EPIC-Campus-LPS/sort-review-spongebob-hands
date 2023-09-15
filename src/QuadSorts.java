@@ -67,8 +67,12 @@ public class QuadSorts {
 
     }
 
+    /**
+     * @param arr Array that we change into tempArr and then sort
+     * @return returns tempArr which is sorted least to greatest
+     */
     public static int[] insertionSort(int[] arr) {
-
+        //Sorts an array by running threw an array finding the lowest number and inserting it in its correct place
         int[] tempArr = arr;
 
         for (int i = 1; i < tempArr.length; i++) {
@@ -82,7 +86,7 @@ public class QuadSorts {
             }
             tempArr[j + 1] = tempValue;
         }
-
+        //Returns the sorted array
         return tempArr;
     }
 
