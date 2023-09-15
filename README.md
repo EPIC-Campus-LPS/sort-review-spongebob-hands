@@ -20,11 +20,17 @@
 - Your handwritten code may be included as part of your GitHub submission or turned in in-person.
 ### Reflection Questions
 1. What group roles did you define for your team? 
-2. What differences are there between your handwritten code and your completed code?
+    We started with a navigator role and driver role. We would switch after each method. As we continued coding, it got harder for us to switch regularly so we would switch when necessary.
+3. What differences are there between your handwritten code and your completed code?
+    Most of the time, our code was pretty similar, but we would have to change a for loop to a while loop (like in isertation sort) and for each sort we would have to add an additional temp array to return the sorted array. We also added an additional for loop for bubble sort and some additional variables in selection. The ideas were there originally though.
 3. What aspects of "good code" does this project demonstrate?
+    Our code is efficient, readable, accurate, purposeful, resilient, and simple.
 4. What challenges did you face during this project?
+    We struggled a lot with recursive functions. It was hard to understand what we were doing wrong when testing because it didn't show us the given array and how our code incorrectly sorted. We ended up using a visualizer to run through our code and understand what was wrong.
 5. What is the difference between interative and recursive design?
+    Recursive design is a method that calls itself, while iterative goes through the method once.
 6. Why do you think software engineers generate Javadoc references or equivalent for their projects? What is effective about Javadoc comments?
+    Javadoc references are really easy to read through without getting overwhelmed by code. Javadoc standards require the right amount of explanation for classes and methods. This is a universal way to help others understand your code.
 
 
 ---
