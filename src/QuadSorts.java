@@ -1,7 +1,19 @@
+/**
+ * Class of methods to sort arrays in order of least to greatest
+ *
+ * @author Marie Viita and Connor Bonn
+ * @version 1.0, 09/15/2023
+ */
 public class QuadSorts {
 
-    // sorts an array from least to greatest by comparing each value in the array to every other value in the array
+    /**
+     *
+     * @param arr takes the array to be sorted
+     * @return returns array sorted from least to greatest
+     */
     public static int[] bubbleSort(int[] arr) {
+
+        // sorts an array from least to greatest by comparing each value in the array to every other value in the array
 
         int[] tempArr = arr;
 
@@ -25,8 +37,14 @@ public class QuadSorts {
 
     }
 
-    // sorts an integer array from least to greatest by selecting the smallest value from the unsorted portion of the list, and then sorting it in the previously sorted section
+    /**
+     *
+     * @param arr takes the array to be sorted
+     * @return returns array sorted from least to greatest
+     */
     public static int[] selectionSort(int[] arr) {
+
+        // sorts an integer array from least to greatest by selecting the smallest value from the unsorted portion of the list, and then sorting it in the previously sorted section
 
         // declaring new array
         int[] tempArr = arr;
@@ -68,8 +86,14 @@ public class QuadSorts {
         return tempArr;
     }
 
-    // mergeSort sorts an array of integers by separating the array into many length 1 arrays and recombining them in order from least to greatest
+    /**
+     *
+     * @param arr takes the array to be sorted
+     * @return returns array sorted from least to greatest
+     */
     public static int[] mergeSort(int[] arr) {
+
+        // mergeSort sorts an array of integers by separating the array into many length 1 arrays and recombining them in order from least to greatest
 
         // the method will not continue if the array length is less than 2 (because it cannot be split up more)
         if (arr.length < 2) {
@@ -101,8 +125,16 @@ public class QuadSorts {
 
     }
 
-    // merge method re-merges the new array sorted from least to greatest
+    /**
+     *
+     * @param arr takes the array to be sorted
+     * @param leftArr takes the sorted left part of array
+     * @param rightArr takes sorted right part of array
+     * @return returns sorted array combined from least to greatest
+     */
     public static int[] merge(int[] arr, int[] leftArr, int[] rightArr) {
+
+        // merge method re-merges the new array sorted from least to greatest
 
         int leftIndex = 0, rightIndex = 0, sortedIndex = 0;
 
