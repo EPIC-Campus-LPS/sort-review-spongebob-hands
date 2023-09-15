@@ -1,5 +1,6 @@
 public class QuadSorts {
 
+    // sorts an array from least to greatest by comparing each value in the array to every other value in the array
     public static int[] bubbleSort(int[] arr) {
 
         int[] tempArr = arr;
