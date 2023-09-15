@@ -63,7 +63,7 @@ public class QuadSorts {
 
     public static int[] mergeSort(int[] arr) {
 
-        if(arr.length == 1) {
+        if(arr.length < 2) {
             return arr;
         }
 
@@ -77,6 +77,38 @@ public class QuadSorts {
 
         leftArr = mergeSort(leftArr);
         rightArr = mergeSort(rightArr);
+
+        merge(arr, leftArr, rightArr);
+
+        int[] newArr = arr;
+
+        return newArr;
+
+    }
+
+    public static int[] merge(int[] arr, int[] leftArr, int[] rightArr) {
+
+        int leftIndex = 0, rightIndex = 0, sortedIndex = 0;
+
+        while(leftIndex < leftArr.length && rightIndex < rightArr.length) {
+
+            if(leftArr[leftIndex] <= rightArr[rightIndex]) {
+                arr[sortedIndex++] = leftArr[leftIndex++];
+            } else {
+                arr[sortedIndex++] = rightArr[rightIndex++];
+            }
+
+        }
+
+        while (leftIndex < leftArr.length) {
+            arr[sortedIndex++] = leftArr[leftIndex++];
+        }
+
+        while (rightIndex < rightArr.length) {
+            arr[sortedIndex++] = rightArr[rightIndex++];
+        }
+
+        return arr;
 
     }
 
